@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #eafaf1; 
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2e7d32; 
+    color: white;
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Container Layout */
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+/* Card Container */
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Page Heading */
+.heading-section {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.heading-section h1 {
+    font-size: 24px;
+    color: #1a1a1a;
+    margin-bottom: 6px;
+}
+
+.heading-section p {
+    color: #666;
+    font-size: 14px;
+}
+
+/* Input & Add Task Button */
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    font-size: 14px;
+}
+
+.input-group input:focus {
+    border-color: #2e7d32;
+}
+
+.input-group button {
+    background-color: #2e7d32; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.input-group button:hover {
+    background-color: #1b5e20;
+}
+
+/* Task Header & Counter */
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.task-header span.title {
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+}
+
+.task-counter {
+    background-color: #2e7d32;
+    color: white;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+/* Filter Buttons */
+.filter-buttons {
+    display: flex;
+    border: 1px solid #2e7d32;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    flex: 1;
+    padding: 8px 0;
+    border: none;
+    background-color: #ffffff;
+    color: #2e7d32;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    border-right: 1px solid #2e7d32;
+}
+
+.filter-buttons button:last-child {
+    border-right: none;
+}
+
+.filter-buttons button.active {
+    background-color: #2e7d32;
+    color: white;
+}
+
+/* Task List Area */
+.task-list {
+    min-height: 40px;
+    margin-bottom: 20px;
+}
+
+/* Clear Completed Button Area */
+.action-area {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.clear-btn {
+    background-color: transparent;
+    color: #ff4d4f;
+    border: 1px solid #ff4d4f;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.clear-btn:hover {
+    background-color: #fff1f0;
+}
